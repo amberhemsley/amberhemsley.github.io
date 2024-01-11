@@ -1,3 +1,6 @@
+
+
+/*
 code {
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 14px;
@@ -117,5 +120,61 @@ code {
     .boolean {
         color: cyan;
     }
+}
+
+*/
+/* create a css style for a card which flips when clicked
+    - use the css style from the card component
+    - add a hover
+ */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 15rem;
+    perspective: 150rem;
+    &-front,
+    &-back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-front{
+        background: linear-gradient(45deg, #333, #555);
+    }
+    &-back{
+        background: linear-gradient(-45deg, #333, #555);
+        transform: rotateX(180deg);
+    }
+    &:hover &-front{
+        transform: rotateX(-180deg);
+    }
+    &:hover &-back{
+        transform: rotateX(0deg);
+    }
+}
+
+.card-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateX(180deg);
 }
 
