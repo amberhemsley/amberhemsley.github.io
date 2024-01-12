@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './fonts/Aqua/aqua.ttf';
+import './fonts/RobotoSlab/Roboto Slab Bold 700.ttf';
+import './fonts/RobotoSlab/Roboto Slab Regular 400.ttf';
+import './fonts/RobotoSlab/Roboto Slab Thin 250.ttf';
+import './fonts/RobotoSlab/Roboto Slab Light 300.ttf';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

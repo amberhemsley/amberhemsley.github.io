@@ -11,6 +11,7 @@ display: flex;
 justify-content: space-around;
 padding: 0.2rem calc((100vw - 900px) / 2);
 z-index: 12;
+font-family: 'Aqua', sans-serif, Arial;
 `;
 
 export const NavLink = styled(Link)`

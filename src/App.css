@@ -23,6 +23,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'Aqua', sans-serif, Arial;
 }
 
 .App-link {
@@ -53,4 +54,9 @@ tfoot {
 .table-right{
   display: flex;
   justify-content: right;
+}
+
+.contact-page{
+  min-height: 100vh;
+  background-color: #FFFFFF;
 }
