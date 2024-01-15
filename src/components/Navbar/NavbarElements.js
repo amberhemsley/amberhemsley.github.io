@@ -15,7 +15,7 @@ font-family: 'Aqua', sans-serif, Arial;
 `;
 
 export const NavLink = styled(Link)`
-color: #16221D;
+color: dimgray;
 display: flex;
 align-items: center;
 text-decoration: none;
