@@ -39,6 +39,7 @@ body {
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
     padding: 0.2rem calc((100vw - 1100px) / 2);
+    padding-top: 10px;
  }
 
 code {
