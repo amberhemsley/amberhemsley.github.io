@@ -1,5 +1,6 @@
 import logo from '../logo.svg';
 import '../App.css';
+import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 
 const Misc = () => {
     return (
@@ -23,6 +24,15 @@ const Misc = () => {
                 </a>
             </header>
             <body>
+            <Tabs>
+                <TabList>
+                    <Tab >1</Tab>
+                    <Tab>2</Tab>
+                    <Tab>3</Tab>
+                </TabList>
+                <TabPanel></TabPanel>
+            </Tabs>
+
 
             </body>
         </>
