@@ -15,10 +15,8 @@
 }
 
 .Header1 {
-  font-size: calc(15px + 2vmin);
-  font-weight: bold;
+  font-size: calc(10px + 2vmin);
   font-family: Aqua, sans-serif, Arial;
-  color: green;
 }
 
 .App-header {
@@ -30,7 +28,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
-  font-family: 'Aqua', sans-serif, Arial;
+  font-family: 'Roboto Slab Thin', sans-serif, Arial;
 }
 
 .App-link {
