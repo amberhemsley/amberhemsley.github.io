@@ -17,10 +17,13 @@ import HomeIcon from "@mui/icons-material/Home";
 import WorkIcon from "@mui/icons-material/Work";
 import FingerprintIcon from "@mui/icons-material/Fingerprint";
 import MessageIcon from "@mui/icons-material/Message";
+import {useNavigate } from 'react-router-dom';
 
 const drawerWidth = 240;
 
 export default function PermanentDrawerLeft() {
+    const navigate = useNavigate();
+
     return (
         <Box sx={{ display: 'flex'}}>
             <Drawer
@@ -42,7 +45,7 @@ export default function PermanentDrawerLeft() {
                         page:'/contact',
                     }].map((button,index) => (
                         <ListItem key={button.text} disablePadding >
-                            <ListItemButton to={button.page}>
+                            <ListItemButton onClick={() => navigate(button.page)}>
                                 <ListItemIcon>
                                     {index === 0 ? <HomeIcon /> : index === 1 ? <WorkIcon /> : index === 2 ? <FingerprintIcon /> : index === 3 ? <MessageIcon /> : null}
                                 </ListItemIcon>

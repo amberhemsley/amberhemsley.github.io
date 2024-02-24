@@ -8,13 +8,16 @@ import './fonts/RobotoSlab/Roboto Slab Bold 700.ttf';
 import './fonts/RobotoSlab/Roboto Slab Regular 400.ttf';
 import './fonts/RobotoSlab/Roboto Slab Thin 250.ttf';
 import './fonts/RobotoSlab/Roboto Slab Light 300.ttf';
+import {HashRouter} from "react-router-dom";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <HashRouter>
+            <App />
+        </HashRouter>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
