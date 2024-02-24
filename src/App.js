@@ -12,10 +12,10 @@ function App() {
       <Router basename="/amberhemsley.github.io">
         <TopBar />
         <Routes>
-          <Route exact path='/' exact element={<Home />} />
-          <Route path='/experience' element={<Experience />} />
-          <Route path='/misc' element={<Misc />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route exact path='/' element={<Home/>} />
+          <Route path='/experience' element={<Experience/>} />
+          <Route path='/misc' element={<Misc/>} />
+          <Route path='/contact' element={<Contact/>} />
         </Routes>
       </Router>
   );
