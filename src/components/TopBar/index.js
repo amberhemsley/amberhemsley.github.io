@@ -38,15 +38,17 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import theme from '../Themes/Themes.js';
 import {ThemeProvider} from "@mui/material";
-import TemporaryDrawer from '../Menu/index.js'
+import TemporaryDrawer from '../Menu/TemporaryDrawer.js'
+import PermanentDrawer from '../Menu/PermanentDrawer.js'
 
 export default function TopBar() {
     return (
         <ThemeProvider theme={theme}>
             <Box sx={{ flexGrow: 1, bgcolor:'primary.main', width:"100%"}}>
-                <AppBar position="static">
-                    <Toolbar>
-                        <TemporaryDrawer/>
+
+                <AppBar position="relative"  sx={{paddingLeft:'40px',zIndex: 'tooltip'}}>
+                    <Toolbar >
+
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontFamily: 'Roboto Slab', fontWeight:'200'}}>
                             Amber Hemsley
                         </Typography>
@@ -54,6 +56,7 @@ export default function TopBar() {
                     </Toolbar>
                 </AppBar>
             </Box>
+            <PermanentDrawer sx={{zIndex: 'modal'}}/>
         </ThemeProvider>
     );
 }

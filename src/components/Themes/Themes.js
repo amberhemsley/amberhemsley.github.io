@@ -8,6 +8,11 @@ let theme = createTheme({
         secondary: {
             main: '#bae8d2',
         },
+        text: {
+            primary: '#434343',
+            secondary: '#ffffff',
+            background: '#FFF3F9',
+        },
     },
 });
 
