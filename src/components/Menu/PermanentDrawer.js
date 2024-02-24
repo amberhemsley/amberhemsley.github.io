@@ -22,7 +22,7 @@ const drawerWidth = 240;
 
 export default function PermanentDrawerLeft() {
     return (
-        <Box sx={{ display: 'flex' }}>
+        <Box sx={{ display: 'flex'}}>
             <Drawer
                 sx={{
                     width: drawerWidth,

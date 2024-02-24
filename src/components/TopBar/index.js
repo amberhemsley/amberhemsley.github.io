@@ -46,10 +46,10 @@ export default function TopBar() {
         <ThemeProvider theme={theme}>
             <Box sx={{ flexGrow: 1, bgcolor:'primary.main', width:"100%"}}>
 
-                <AppBar position="relative"  sx={{paddingLeft:'40px',zIndex: 'tooltip'}}>
+                <AppBar position="relative"  sx={{paddingLeft:'50px',zIndex: 'tooltip'}}>
                     <Toolbar >
 
-                        <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontFamily: 'Roboto Slab', fontWeight:'200'}}>
+                        <Typography variant="h5" component="div" sx={{ display:'flex',justifyContent:'center', flexGrow: 1, fontFamily: 'Roboto Slab', fontWeight:'600', letterSpacing:'3em'}}>
                             Amber Hemsley
                         </Typography>
                         <Button color="inherit">Download CV</Button>
