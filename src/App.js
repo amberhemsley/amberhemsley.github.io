@@ -9,7 +9,7 @@ import Contact from './pages/contact';
 
 function App() {
   return (
-      <Router>
+      <Router basename="/amberhemsley.github.io">
         <TopBar />
         <Routes>
           <Route exact path='/' exact element={<Home />} />
