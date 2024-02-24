@@ -1,6 +1,8 @@
 import logo from '../logo.svg';
 import '../App.css';
 import App from "../App";
+import PermanentDrawer from "../components/Menu/PermanentDrawer";
+import React from "react";
 
 // create a React component that renders a buisness card which flips when its clicked on
 function flipCard() {

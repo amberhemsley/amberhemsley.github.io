@@ -1,6 +1,8 @@
 import logo from '../logo.svg';
 import '../App.css';
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
+import PermanentDrawer from "../components/Menu/PermanentDrawer";
+import React from "react";
 
 const Misc = () => {
     return (

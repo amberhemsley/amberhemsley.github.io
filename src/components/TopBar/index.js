@@ -56,7 +56,7 @@ export default function TopBar() {
                     </Toolbar>
                 </AppBar>
             </Box>
-            <PermanentDrawer sx={{zIndex: 'modal'}}/>
+            <PermanentDrawer />
         </ThemeProvider>
     );
 }
