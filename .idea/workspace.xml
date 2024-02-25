@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="972dccf5-fd36-4b24-b6f2-836b8b7da2ad" name="Changes" comment="routing working :D">
+    <list default="true" id="972dccf5-fd36-4b24-b6f2-836b8b7da2ad" name="Changes" comment="relative title spacing">
       <change beforePath="$PROJECT_DIR$/src/components/TopBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopBar/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +129,8 @@
     <MESSAGE value="fix deployment" />
     <MESSAGE value="hashrouter" />
     <MESSAGE value="routing working :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="routing working :D" />
+    <MESSAGE value="relative title spacing" />
+    <option name="LAST_COMMIT_MESSAGE" value="relative title spacing" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
