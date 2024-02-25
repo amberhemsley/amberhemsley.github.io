@@ -14,12 +14,13 @@ import HomeIcon from '@mui/icons-material/Home';
 import IconButton from "@mui/material/IconButton";
 import MessageIcon from '@mui/icons-material/Message';
 import FingerprintIcon from '@mui/icons-material/Fingerprint';
+import Toolbar from "@mui/material/Toolbar";
 
 export default function TemporaryDrawer() {
     const [open, setOpen] = React.useState(false);
 
-    const toggleDrawer = (newOpen) => () => {
-        setOpen(newOpen);
+    const toggleDrawer = () => () => {
+        setOpen(!open);
     };
 
     const DrawerList = (
@@ -50,11 +51,15 @@ export default function TemporaryDrawer() {
                 edge="start"
                 color="#000"
                 aria-label="menu"
-                sx={{ mr: 2 }}
+                sx={{ mr: 2, display: { sm: 'none' } }}
             >
                 <MenuIcon />
             </IconButton>
-            <Drawer open={open} onClose={toggleDrawer(false)}>
+            <Drawer open={open} onClose={toggleDrawer(false)} sx={{
+                display: { xs: 'block', sm: 'none' },
+                '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 240 },
+            }}>
+                <Toolbar sx={{p: '20px'}}/>
                 {DrawerList}
             </Drawer>
         </div>

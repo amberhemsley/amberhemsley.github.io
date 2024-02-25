@@ -26,6 +26,7 @@ const Home = () => {
     return (
         <ThemeProvider theme={theme}>
             <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <meta charSet="UTF-8"/>
                 <title>Home</title>
             </head>
@@ -46,8 +47,12 @@ const Home = () => {
                         color: 'text.primary',
                     }}>
                     <header className="Header2">About Me</header>
-
-                       I am {age} years old and I'm a software engineer with experience in Go, Java, Python and C#. I am currently studying Computer Science at the University of York going into my third year.
+                        <p>
+                            I am {age} years old and I'm a software engineer with experience in Go, Java, Python and C#.
+                        </p>
+                        <p>
+                            I am currently studying Computer Science at the University of York going starting my third year this September.
+                        </p>
                     </Box>
                     <Box sx={{
                         width: 'fix-content',

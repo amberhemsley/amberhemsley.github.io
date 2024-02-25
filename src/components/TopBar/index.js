@@ -1,33 +1,3 @@
-/*import React from "react";
-import { Nav, NavLink, NavMenu }
-    from "./NavbarElements";
-import logo from "../../logo.svg";
-
-const Navbar = () => {
-    return (
-        <>
-            <Nav>
-                <img src="./Logo.png" className="Main-logo" alt="logo"/>
-                <NavMenu>
-                    <NavLink to="/home" activeStyle>
-                        Home
-                    </NavLink>
-                    <NavLink to="/experience" activeStyle>
-                        Experience
-                    </NavLink>
-                    <NavLink to="/misc" activeStyle>
-                        Miscellaneous
-                    </NavLink>
-                    <NavLink to="/contact" activeStyle>
-                        Contact Me
-                    </NavLink>
-                </NavMenu>
-            </Nav>
-        </>
-    );
-};
-
-export default Navbar;*/
 
 import * as React from 'react';
 import '../../index.css';
@@ -38,25 +8,31 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import theme from '../Themes/Themes.js';
 import {ThemeProvider} from "@mui/material";
-import TemporaryDrawer from '../Menu/TemporaryDrawer.js'
-import PermanentDrawer from '../Menu/PermanentDrawer.js'
+import TemporaryDrawer from "../Menu/TemporaryDrawer";
+import PermanentDrawerLeft from "../Menu/PermanentDrawer";
 
 export default function TopBar() {
     return (
         <ThemeProvider theme={theme}>
             <Box sx={{ flexGrow: 1, bgcolor:'primary.main', width:"100%"}}>
 
-                <AppBar position="relative"  sx={{paddingLeft:'50px',zIndex: 'tooltip'}}>
-                    <Toolbar >
-
-                        <Typography variant="h5" component="div" sx={{ display:'flex',justifyContent:'center', flexGrow: 1, fontFamily: 'Roboto Slab', fontWeight:'600', letterSpacing:'3em'}}>
+                <AppBar position="relative"  sx={{paddingLeft:'20px',zIndex: 'tooltip'}}>
+                    <Toolbar>
+                        <TemporaryDrawer sx={{paddingRight:'50px'}}/>
+                        <Typography variant="h5" component="div" sx={{ display: { xs: 'none', md: 'block' },justifyContent:'center', flexGrow: 1, fontFamily: 'Roboto Slab', fontWeight:'600', letterSpacing:'calc(8vmin)',paddingLeft:'50px'}}>
                             Amber Hemsley
+                        </Typography>
+                        <Typography variant="subtitle1" component="div" sx={{ display: { xs: 'none', sm: 'block', md:'none' },justifyContent:'center', flexGrow: 1, fontFamily: 'Roboto Slab', fontWeight:'600', letterSpacing:'calc(4vmin)'}}>
+                            Amber Hemsley
+                        </Typography>
+                        <Typography variant="subtitle2" component="div" sx={{ display: { xs: 'block', sm: 'none' },justifyContent:'center', flexGrow: 1, fontFamily: 'Roboto Slab', fontWeight:'600', letterSpacing:'calc(2vmin)'}}>
+                            Amber
                         </Typography>
                         <Button color="inherit">Download CV</Button>
                     </Toolbar>
                 </AppBar>
             </Box>
-            <PermanentDrawer />
+                <PermanentDrawerLeft/>
         </ThemeProvider>
     );
 }

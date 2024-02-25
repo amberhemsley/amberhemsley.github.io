@@ -34,6 +34,7 @@ export default function PermanentDrawerLeft() {
                         width: drawerWidth,
                         boxSizing: 'border-box',
                     },
+                    display: { xs: 'none', sm: 'block' },
                 }}
                 variant="permanent"
                 anchor="left"
