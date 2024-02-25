@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import theme from "../components/Themes/Themes";
 import {Grid, ThemeProvider} from "@mui/material";
 import PermanentDrawer from "../components/Menu/PermanentDrawer";
+import MenuBlock from "../components/Menu/block";
 
 
 function timeSince(date) {
@@ -34,6 +35,7 @@ const Home = () => {
                 display: 'flex',
                 justifyContent: 'center',
                 flexWrap: 'wrap'}}>
+                <MenuBlock/>
                     <Box sx={{
                         width: 'calc(40px + 50vmin)',
                         height: 'fit-content',

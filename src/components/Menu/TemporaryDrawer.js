@@ -51,12 +51,12 @@ export default function TemporaryDrawer() {
                 edge="start"
                 color="#000"
                 aria-label="menu"
-                sx={{ mr: 2, display: { sm: 'none' } }}
+                sx={{ mr: 2, display: { md: 'none' } }}
             >
                 <MenuIcon />
             </IconButton>
             <Drawer open={open} onClose={toggleDrawer(false)} sx={{
-                display: { xs: 'block', sm: 'none' },
+                display: { xs: 'block', md: 'none' },
                 '& .MuiDrawer-paper': { boxSizing: 'border-box', width: 240 },
             }}>
                 <Toolbar sx={{p: '20px'}}/>
