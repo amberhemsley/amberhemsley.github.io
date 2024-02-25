@@ -49,7 +49,7 @@ export default function TopBar() {
                 <AppBar position="relative"  sx={{paddingLeft:'50px',zIndex: 'tooltip'}}>
                     <Toolbar >
 
-                        <Typography variant="h5" component="div" sx={{ display:'flex',justifyContent:'center', flexGrow: 1, fontFamily: 'Roboto Slab', fontWeight:'600', letterSpacing:'3em'}}>
+                        <Typography variant="h5" component="div" sx={{ display:'flex',justifyContent:'center', flexGrow: 1, fontFamily: 'Roboto Slab', fontWeight:'600', letterSpacing:'7.5vmin'}}>
                             Amber Hemsley
                         </Typography>
                         <Button color="inherit">Download CV</Button>
