@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
 
-        <HashRouter basename="amberhemsley.github.io">
+        <HashRouter>
             <App />
         </HashRouter>
     </React.StrictMode>
