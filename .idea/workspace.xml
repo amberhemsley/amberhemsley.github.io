@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="972dccf5-fd36-4b24-b6f2-836b8b7da2ad" name="Changes" comment="work content">
-      <change afterPath="$PROJECT_DIR$/src/components/content/uni.js" afterDir="false" />
+    <list default="true" id="972dccf5-fd36-4b24-b6f2-836b8b7da2ad" name="Changes" comment="uni modules">
+      <change afterPath="$PROJECT_DIR$/src/components/content/school.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/content/work.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/work.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/content/uni.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/uni.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/experience.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +150,8 @@
     <MESSAGE value="hashrouting" />
     <MESSAGE value="cv" />
     <MESSAGE value="work content" />
-    <option name="LAST_COMMIT_MESSAGE" value="work content" />
+    <MESSAGE value="uni modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="uni modules" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

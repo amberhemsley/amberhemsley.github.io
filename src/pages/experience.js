@@ -15,6 +15,7 @@ import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Work from "../components/content/work";
 import Uni from "../components/content/uni";
+import School from "../components/content/school";
 
 
 const Experience = () => {
@@ -79,35 +80,7 @@ const Experience = () => {
                             <Uni/>
                         </TabPanel>
                         <TabPanel value={'3'} index={2}>
-                            <table>
-                                <thead>
-                                <tr>
-                                    <th colSpan="2">Results</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th>Subject</th>
-                                    <th>Grade</th>
-                                </tr>
-                                <tr>
-                                    <td>Computer Science</td>
-                                    <td>A*</td>
-                                </tr>
-                                <tr>
-                                    <td>Maths</td>
-                                    <td>A*</td>
-                                </tr>
-                                <tr>
-                                    <td>Physics</td>
-                                    <td>A</td>
-                                </tr>
-                                <tr>
-                                    <td>Further Maths AS</td>
-                                    <td>A</td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            <School/>
                         </TabPanel>
                         </TabContext>
                     </Box>
@@ -126,7 +99,6 @@ const Experience = () => {
                 }}>
                 </Box>
             </div>
-            );
         </ThemeProvider>
 
     );

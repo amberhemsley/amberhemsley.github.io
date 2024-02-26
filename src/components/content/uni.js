@@ -34,8 +34,6 @@ const Uni = () => {
                     Intelligent Systems 1 – 78%<br/>
                     Intelligent Systems 2 – 71%<br/>
                 </Typography>
-                <Typography variant="body1">
-                </Typography>
         </Box>
     );
 };
