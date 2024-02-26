@@ -28,7 +28,7 @@ export default function TopBar() {
                         <Typography variant="subtitle2" component="div" sx={{ display: { xs: 'block', sm: 'none' },justifyContent:'center', flexGrow: 1, fontFamily: 'Roboto Slab', fontWeight:'600', letterSpacing:'calc(2vmin)'}}>
                             Amber
                         </Typography>
-                        <Button color="inherit">Download CV</Button>
+                        <Button color="inherit" href="./Amber-Hemsley-CV.pdf" download="Amber-Hemsley-CV">Download CV</Button>
                     </Toolbar>
                 </AppBar>
             </Box>

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="972dccf5-fd36-4b24-b6f2-836b8b7da2ad" name="Changes" comment="experience page initial layout">
+    <list default="true" id="972dccf5-fd36-4b24-b6f2-836b8b7da2ad" name="Changes" comment="hashrouting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/TemporaryDrawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/TemporaryDrawer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopBar/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +145,8 @@
     <MESSAGE value="undo" />
     <MESSAGE value="mobile friendly" />
     <MESSAGE value="experience page initial layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="experience page initial layout" />
+    <MESSAGE value="hashrouting" />
+    <option name="LAST_COMMIT_MESSAGE" value="hashrouting" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
