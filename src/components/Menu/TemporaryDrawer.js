@@ -26,9 +26,9 @@ export default function TemporaryDrawer() {
     const DrawerList = (
         <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
             <List>
-                {[{text:'Home', page:'/'},{text:'Experience',page:'/experience'}, {text:'Miscellaneous', page:'/misc'}, {
+                {[{text:'Home', page:'/#/'},{text:'Experience',page:'/#/experience'}, {text:'Miscellaneous', page:'/#/misc'}, {
                     text:'Contact Me',
-                    page:'/contact',
+                    page:'/#/contact',
                 }].map((button,index) => (
                     <ListItem key={button.text} disablePadding >
                         <ListItemButton to={button.page}>
