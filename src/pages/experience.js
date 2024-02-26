@@ -14,6 +14,7 @@ import Tabs from '@mui/material/Tabs';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Work from "../components/content/work";
+import Uni from "../components/content/uni";
 
 
 const Experience = () => {
@@ -58,7 +59,7 @@ const Experience = () => {
                     fontFamily: 'Roboto Slab',
                     color: 'text.primary',
                 }}>
-                    <Box sx={{ width: '100%' }}>
+                    <Box sx={{ width: '100vh' }}>
                         <TabContext value={value}>
                         <Box sx={{ borderBottom: 1, borderColor: 'divider', width: 'fit-content', fontSize: "calc(1vw + 10px)"}}>
                             <Tabs value={value} onChange={handleChange} aria-label="basic tabs example"
@@ -75,7 +76,7 @@ const Experience = () => {
                             <Work/>
                         </TabPanel>
                         <TabPanel value={'2'} index={1}>
-                            Item Two
+                            <Uni/>
                         </TabPanel>
                         <TabPanel value={'3'} index={2}>
                             <table>
