@@ -13,6 +13,7 @@ import TabContext from '@mui/lab/TabContext';
 import Tabs from '@mui/material/Tabs';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
+import Work from "../components/content/work";
 
 
 const Experience = () => {
@@ -21,6 +22,17 @@ const Experience = () => {
     const handleChange = (event , newValue) => {
         setValue(newValue);
     };
+
+    const tabStyle = (minWidth) =>{
+        return {
+            flexDirection: 'row',
+            justifyContent: 'center',
+            width: '10vmin',
+            minWidth: minWidth,
+            padding: '0px 5px 0px 5px',
+            fontSize: 'calc(1vw + 10px)',
+        }
+    }
 
     return (
         <ThemeProvider theme={theme}>
@@ -48,17 +60,19 @@ const Experience = () => {
                 }}>
                     <Box sx={{ width: '100%' }}>
                         <TabContext value={value}>
-                        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                        <Box sx={{ borderBottom: 1, borderColor: 'divider', width: 'fit-content', fontSize: "calc(1vw + 10px)"}}>
                             <Tabs value={value} onChange={handleChange} aria-label="basic tabs example"
                                   textColor="primary.dark"
-                                  indicatorColor="secondary">
-                                <Tab label="Work" value={'1'}/>
-                                <Tab label="Uni" value={'2'}/>
-                                <Tab label="School" value={'3'}/>
+                                  indicatorColor="secondary"
+                                  variant="fullWidth"
+                                  sx={{width: 'fit-content'}}>
+                                <Tab sx={tabStyle('50px')} label="Work" value={'1'}/>
+                                <Tab sx={tabStyle('50px')} label="Uni" value={'2'}/>
+                                <Tab sx={tabStyle('80px')} label="School" value={'3'}/>
                             </Tabs>
                         </Box>
                         <TabPanel value={'1'} index={0}>
-                            <h2>Go, kotlin, kubernetes, redis, rest, websockets, mongo, hexagonal architecture, pubsub</h2>
+                            <Work/>
                         </TabPanel>
                         <TabPanel value={'2'} index={1}>
                             Item Two
@@ -96,53 +110,6 @@ const Experience = () => {
                         </TabPanel>
                         </TabContext>
                     </Box>
-                   {/* <Tabs
-                        textColor="secondary"
-                        indicatorColor="secondary"
-                        aria-label="secondary tabs example"
-                    >
-                        <TabList>
-                        <Tab value="one" label="Item One" />
-                        <Tab value="two" label="Item Two" />
-                        <Tab value="three" label="Item Three" />
-                    </TabList>
-                    </Tabs>*/}
-                    {/*
-                        <TabPanel sx={{display:'flex '}}>
-                            <h2>Any content 3</h2>
-
-                            <div className="table-right">
-                                <table>
-                                    <thead>
-                                    <tr>
-                                        <th colSpan="2">Results</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <th>Subject</th>
-                                        <th>Grade</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Computer Science</td>
-                                        <td>A*</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Maths</td>
-                                        <td>A*</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Physics</td>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Further Maths AS</td>
-                                        <td>A</td>
-                                    </tr>
-                                    </tbody>
-                                </table></div>
-                        </TabPanel>
-                    </Tabs>*/}
                 </Box>
                 <Box sx={{
                     width: 'fix-content',

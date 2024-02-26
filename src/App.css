@@ -70,3 +70,11 @@ tfoot {
   min-height: 100vh;
   background-color: #FFFFFF;
 }
+
+.tab{
+    display: flex;
+    felx-direction: row;
+    justify-content: flex-start;
+    padding: 5px 2vw 0px 0px;
+    width: fit-content;
+}
