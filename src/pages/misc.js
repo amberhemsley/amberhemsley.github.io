@@ -23,11 +23,10 @@ const Misc = () => {
             </head>
             <div className="App" style={{
                 display: 'flex',
-                justifyContent: 'flex-start',
-                flexWrap: 'wrap'}}>
+                justifyContent: 'flex-start'}}>
                 <MenuBlock/>
                 <Box sx={{
-                    width: 'fix-content',
+                    width: 'calc(40px + 50vmin)',
                     height: 'fit-content',
                     borderRadius: 1,
                     display:"flex",

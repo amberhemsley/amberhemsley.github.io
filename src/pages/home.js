@@ -68,7 +68,7 @@ const Home = () => {
                         fontFamily: 'Roboto Slab',
                         color: 'text.primary',
                     }}>
-                        <img src="./devonCropped.JPG" alt="logo" style={{height:'40vmin'}}/>
+                        <img src="./media/devonCropped.JPG" alt="logo" style={{height:'40vmin'}}/>
                     </Box>
             </div>
             );
