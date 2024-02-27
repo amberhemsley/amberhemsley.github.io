@@ -29,7 +29,7 @@ const Experience = () => {
         return {
             flexDirection: 'row',
             justifyContent: 'center',
-            width: '10vmin',
+            width: '12vmin',
             minWidth: minWidth,
             padding: '0px 5px 0px 5px',
             fontSize: 'calc(1vw + 10px)',
@@ -46,11 +46,10 @@ const Experience = () => {
             </head>
             <div className="App" style={{
                 display: 'flex',
-                justifyContent: 'flex-start',
-                flexWrap: 'wrap'}}>
+                justifyContent: 'flex-start'}}>
                 <MenuBlock/>
                 <Box sx={{
-                    width: 'calc(40px + 50vmin)',
+                    width: '100vmin',
                     height: 'fit-content',
                     borderRadius: 1,
                     display:"flex",
@@ -61,44 +60,30 @@ const Experience = () => {
                     fontFamily: 'Roboto Slab',
                     color: 'text.primary',
                 }}>
-                    <Box sx={{ width: '100vh' }}>
-                        <TabContext value={value}>
-                        <Box sx={{ borderBottom: 1, borderColor: 'divider', width: 'fit-content', fontSize: "calc(1vw + 10px)"}}>
-                            <Tabs value={value} onChange={handleChange} aria-label="basic tabs example"
-                                  textColor="primary.dark"
-                                  indicatorColor="secondary"
-                                  variant="fullWidth"
-                                  sx={{width: 'fit-content'}}>
-                                <Tab sx={tabStyle('50px')} label="Work" value={'1'}/>
-                                <Tab sx={tabStyle('50px')} label="Uni" value={'2'}/>
-                                <Tab sx={tabStyle('80px')} label="School" value={'3'}/>
-                            </Tabs>
-                        </Box>
-                        <TabPanel value={'1'} index={0}>
-                            <Work/>
-                        </TabPanel>
-                        <TabPanel value={'2'} index={1}>
-                            <Uni/>
-                        </TabPanel>
-                        <TabPanel value={'3'} index={2}>
-                            <School/>
-                        </TabPanel>
-                        </TabContext>
+                    <TabContext value={value}>
+                    <Box sx={{ borderBottom: 1, borderColor: 'divider', width: 'inherit', fontSize: "calc(1vw + 10px)"}}>
+                        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example"
+                              textColor="primary.dark"
+                              indicatorColor="secondary"
+                              variant="fullWidth"
+                              sx={{width: 'fit-content'}}>
+                            <Tab sx={tabStyle('50px')} label="Work" value={'1'}/>
+                            <Tab sx={tabStyle('50px')} label="Uni" value={'2'}/>
+                            <Tab sx={tabStyle('90px')} label="School" value={'3'}/>
+                        </Tabs>
                     </Box>
+                    <TabPanel value={'1'} index={0}>
+                        <Work/>
+                    </TabPanel>
+                    <TabPanel value={'2'} index={1}>
+                        <Uni/>
+                    </TabPanel>
+                    <TabPanel value={'3'} index={2}>
+                        <School/>
+                    </TabPanel>
+                    </TabContext>
                 </Box>
-                <Box sx={{
-                    width: 'fix-content',
-                    height: 'fit-content',
-                    borderRadius: 1,
-                    display:"flex",
-                    alignItems:"flex-start",
-                    justifyContent:"center",
-                    flexDirection:"column",
-                    p:3,
-                    fontFamily: 'Roboto Slab',
-                    color: 'text.primary',
-                }}>
-                </Box>
+
             </div>
         </ThemeProvider>
 

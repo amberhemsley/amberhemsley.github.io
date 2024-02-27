@@ -33,18 +33,25 @@ const Home = () => {
             </head>
             <div className="App" style={{
                 display: 'flex',
-                justifyContent: 'center',
-                flexWrap: 'wrap'}}>
+                justifyContent: 'center',}}>
                 <MenuBlock/>
+                <Box sx={{
+                    display: 'flex',
+                    width: '100%',
+                    flexWrap: 'wrap',
+                    flexDirection: 'row',
+                    paddingRight: '10px',
+                }}>
                     <Box sx={{
                         width: 'calc(40px + 50vmin)',
                         height: 'fit-content',
                         borderRadius: 1,
                         display:"flex",
                         alignItems:"flex-start",
-                        justifyContent:"center",
+                        justifyContent:"flex-start",
                         flexDirection:"column",
                         p:3,
+                        paddingRight: '10px',
                         fontFamily: 'Roboto Slab',
                         color: 'text.primary',
                     }}>
@@ -57,19 +64,17 @@ const Home = () => {
                         </p>
                     </Box>
                     <Box sx={{
-                        width: 'fix-content',
                         height: 'fit-content',
+                        width: 'fit-content',
                         borderRadius: 1,
                         display:"flex",
-                        alignItems:"flex-start",
                         justifyContent:"center",
-                        flexDirection:"column",
                         p:3,
-                        fontFamily: 'Roboto Slab',
-                        color: 'text.primary',
+                        paddingRight: '10px',
                     }}>
                         <img src="./media/devonCropped.JPG" alt="logo" style={{height:'40vmin'}}/>
                     </Box>
+                </Box>
             </div>
             );
         </ThemeProvider>
