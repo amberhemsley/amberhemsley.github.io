@@ -51,7 +51,7 @@ const Misc = () => {
                     <div style={{display: "flex", padding:'10px'}}>
                         <Box sx={sectionStyle}>
                             <Typography variant="h5" sx={{fontFamily:"Aqua"}}>More About Me</Typography>
-                            <Typography variant="h6">Hobbies</Typography>
+                            <Typography variant="h6" sx={{fontWeight:'bold', fontFamily:"Roboto Slab"}}>Hobbies</Typography>
                             <Typography variant="body2"><br/>
                                 I attended Pat Steel School of Dance for 15 years including competing in local competitions throughout
                                 secondary school. I took classes in ballet, tap, modern and contemporary taking graded exams and performing

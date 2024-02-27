@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="972dccf5-fd36-4b24-b6f2-836b8b7da2ad" name="Changes" comment="">
+    <list default="true" id="972dccf5-fd36-4b24-b6f2-836b8b7da2ad" name="Changes" comment="contact card">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/content/school.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/school.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/content/uni.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/uni.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/content/work.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/work.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/experience.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/misc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/misc.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

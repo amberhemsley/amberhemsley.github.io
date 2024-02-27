@@ -7,7 +7,7 @@ import React from "react";
 import theme from "../components/Themes/Themes";
 import MenuBlock from "../components/Menu/block";
 import Box from "@mui/material/Box";
-import {ThemeProvider} from "@mui/material";
+import {Chip, ThemeProvider} from "@mui/material";
 import Tab from "@mui/material/Tab"
 import TabContext from '@mui/lab/TabContext';
 import Tabs from '@mui/material/Tabs';
@@ -16,6 +16,9 @@ import TabPanel from '@mui/lab/TabPanel';
 import Work from "../components/content/work";
 import Uni from "../components/content/uni";
 import School from "../components/content/school";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import IconButton from "@mui/material/IconButton";
 
 
 const Experience = () => {
@@ -29,7 +32,7 @@ const Experience = () => {
         return {
             flexDirection: 'row',
             justifyContent: 'center',
-            width: '12vmin',
+            width: '14vmin',
             minWidth: minWidth,
             padding: '0px 5px 0px 5px',
             fontSize: 'calc(1vw + 10px)',
@@ -60,6 +63,8 @@ const Experience = () => {
                     fontFamily: 'Roboto Slab',
                     color: 'text.primary',
                 }}>
+                    <IconButton href="https://github.com/hemsleya?tab=repositories" sx={{color:'#0077b5'}} ><Chip label="Github" icon={<GitHubIcon  sx={{color:'#0077b5'}}/>} sx={{backgroundColor:'rgba(0, 0, 0, 0)', fontSize:'calc(0.5vw + 12px)'}}/></IconButton>
+                    <br/>
                     <TabContext value={value}>
                     <Box sx={{ borderBottom: 1, borderColor: 'divider', width: 'inherit', fontSize: "calc(1vw + 10px)"}}>
                         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example"
@@ -69,7 +74,7 @@ const Experience = () => {
                               sx={{width: 'fit-content'}}>
                             <Tab sx={tabStyle('50px')} label="Work" value={'1'}/>
                             <Tab sx={tabStyle('50px')} label="Uni" value={'2'}/>
-                            <Tab sx={tabStyle('90px')} label="School" value={'3'}/>
+                            <Tab sx={tabStyle('100px')} label="School" value={'3'}/>
                         </Tabs>
                     </Box>
                     <TabPanel value={'1'} index={0}>

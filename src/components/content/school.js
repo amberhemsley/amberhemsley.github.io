@@ -26,6 +26,21 @@ const School = () => {
                 English Literature – 6<br/>
                 <br/>
             </Typography>
+            <br/>
+            <Typography variant="h6" sx={{fontWeight:'bold', fontFamily:"Roboto Slab"}}>Key Projects</Typography>
+            <br/>
+            <Typography variant="subtitle1">A-level Computer Science Project</Typography>
+            <Typography variant="body1">
+                My A-level computer science project was to create a program to introduce people to the basics of the game DnD.
+                This stemmed from a personal need as my friends kept asking me to join their campaigns but even creating a character was
+                far from simple. I used C# to create a mini game where the user could create a character with inputs for names and buttons to
+                roll dice for stats. This visualised the process making it easier for new players to understand. I also included a battle field
+                with a grid map and a turn based system to simulate movement in combat. The player moved at different speeds depending on their
+                stats and terrain with an ememy chasing them using a pathfinding algorithm. This project was a great learning experience as it was
+                my first proper coding project and I had improve my coding skills as well as my time management. Unfortunately due to covid I was unable
+                to complete the project to the standard I wanted but I still learnt a lot from it.
+            </Typography>
+            <br/>
             <Typography variant="h6" sx={{fontWeight:'bold', fontFamily:"Roboto Slab"}}>Extra Curricular</Typography>
             <Typography variant="subtitle1" sx={{fontWeight:'bold', fontFamily:"Roboto Slab"}}>
                 <a href="https://astro-pi.org/mission-space-lab/">Astro Pi Mission Space Lab</a>
