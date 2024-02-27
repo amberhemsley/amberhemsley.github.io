@@ -33,6 +33,7 @@ const Experience = () => {
             minWidth: minWidth,
             padding: '0px 5px 0px 5px',
             fontSize: 'calc(1vw + 10px)',
+            fontFamily: 'Aqua',
         }
     }
 
