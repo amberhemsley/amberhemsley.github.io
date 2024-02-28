@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="972dccf5-fd36-4b24-b6f2-836b8b7da2ad" name="Changes" comment="kinda done">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="972dccf5-fd36-4b24-b6f2-836b8b7da2ad" name="Changes" comment="fix image names">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/media/Dance.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/public/media/dance.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/misc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/misc.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +128,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="basic content" />
     <MESSAGE value="colours" />
     <MESSAGE value="fonts" />
     <MESSAGE value="contact" />
@@ -156,7 +152,8 @@
     <MESSAGE value="misc" />
     <MESSAGE value="contact card" />
     <MESSAGE value="kinda done" />
-    <option name="LAST_COMMIT_MESSAGE" value="kinda done" />
+    <MESSAGE value="fix image names" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix image names" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
